@@ -3,11 +3,16 @@
 ;;; See http://tuhdo.github.io/emacs-tutor3.html
 ;;; Code:
 
+;; Added by Package.el.  This must come before configurations of
+;; installed packages.  Don't delete this line.  If you don't want it,
+;; just comment it out by adding a semicolon to the start of the line.
+;; You may delete these explanatory comments.
+(package-initialize)
+
 ;; --------------------------
 ;; No annoying backup files -
 ;; --------------------------
 (setq make-backup-files nil backup-inhibited t)
-
 
 ;; -------------------
 ;; My custom modules -
@@ -43,6 +48,9 @@
  '(org-agenda-files
    (quote
     ("~/notes/cpp_tips_and_tricks_practices.org" "~/notes/las-general.org" "~/notes/adelost_server.org" "~/notes/adelost_sensor.org" "~/notes/arena.org")))
+ '(package-selected-packages
+   (quote
+    (solarized-theme smartparens python-x python-mode projectile markdown-toc markdown-preview-eww markdown-mode+ markdown-mode flycheck-pos-tip flycheck-irony flycheck highlight-symbol helm-gtags helm-core helm epl company-lua company-irony-c-headers company-irony company-c-headers company-quickhelp company cmake-font-lock cmake-mode auto-org-md async)))
  '(size-indication-mode t)
  '(tool-bar-mode nil))
 (custom-set-faces

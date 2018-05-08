@@ -29,7 +29,10 @@
         (company-irony-c-headers . "melpa")
         (company-lua             . "melpa")
         (dash                    . "melpa-stable")
+        (docker-compose-mode     . "melpa-stable")
+        (dockerfile-mode         . "melpa-stable")
         (epl                     . "melpa-stable")
+        (groovy-mode             . "melpa-stable")
         (helm                    . "melpa-stable")
         (helm-core               . "melpa-stable")
         (helm-gtags              . "melpa-stable")
@@ -53,8 +56,6 @@
         (smartparens             . "melpa-stable")
         (solarized-theme         . "melpa-stable")))
 
-(package-initialize)
-
 (defun install-required-packages (package-list)
   (when (>= emacs-major-version 24)
     (package-refresh-contents)
@@ -74,7 +75,10 @@
                               company-irony-c-headers
                               company-lua
                               dash
+                              docker-compose-mode
+                              dockerfile-mode
                               epl
+                              groovy-mode
                               helm
                               helm-core
                               helm-gtags

@@ -4,6 +4,4 @@
 
 (provide 'customise-python)
 
-
-
 ;;; customise-python.el ends here
